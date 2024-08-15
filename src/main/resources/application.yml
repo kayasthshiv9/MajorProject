@@ -1,0 +1,19 @@
+server:
+  port: 7071
+spring:
+  application:
+    name: JRTP701-ApplicationRegistrationService
+  datasource:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      password: root
+      username: root
+      url: jdbc:mysql://localhost:3306/jrtp701db1
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+ar:
+  ssa-web:
+     url: http://localhost:9090/ssa-web-api/find/{ssn}
+  state: california
